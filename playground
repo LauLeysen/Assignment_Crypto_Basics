@@ -1,6 +1,0 @@
-from sslib import shamir
-
-data = {'required_shares': 2, 'prime_mod': 'AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhQ==', 'shares': ['1-Swwdr0O19NSMsoG4DXxvTeB9WTykw9+a', '3-4SRZDcshiZTVRJ7nVY8NDq83JOsnZtPm']}
-sentence = shamir.recover_secret(shamir.from_base64(data)).decode('ascii')
-
-print(sentence)
