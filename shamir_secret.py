@@ -1,4 +1,5 @@
 from sslib import shamir
+import ast
 
 def shamir_encrypt(sentence):
     required_shares = 2
@@ -9,6 +10,8 @@ def shamir_encrypt(sentence):
     return data
 
 def shamir_decrypt(sharesdata):
-    data = shamir.recover_secret(shamir.from_base64(sharesdata)).decode('ascii')
+    data = ast.literal_eval(sharesdata) # need to use ast to get correct formatting for the library strings dont work
+
+    data = shamir.recover_secret(shamir.from_base64(data)).decode('ascii')
 
     return data

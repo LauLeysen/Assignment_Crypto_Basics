@@ -22,7 +22,7 @@ def homorphic():
 
     print("De som decrypted is:", decrypted_sum[0])
 
-def shamir():
+def shamir(): # Note that the shamir library used is only for linux systems as the library refers to a linux path /dev/random
     choice = int(input("Encrypt or decrypt sentence? (1,2): "))
     
     if choice == 1:
