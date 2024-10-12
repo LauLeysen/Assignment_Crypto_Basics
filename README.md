@@ -12,6 +12,8 @@ Encrypteer een zin. Gebruik Shamir Secret sharing om de sleutel te beschermen. Z
 één share én de ciphertext op paste.ee (geldigheid: 6 maanden) en zet een andere share
 in jouw verslag. Voeg de link naar de paste.ee pagina ook toe in het verslag.
 
+Find the generated 2nd share https://paste.ee/p/GSOdP
+
 ## Opdracht 2.4: Post-quantum crypto
 Encrypteer een zin. Gebruik een post-quantum crypto algoritme naar keuze (zie bv.
 https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022)
