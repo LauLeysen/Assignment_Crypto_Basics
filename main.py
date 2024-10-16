@@ -1,6 +1,7 @@
 from homorphic_encryption import initialize_context, encrypt_number, add_ciphertexts, decrypt_ciphertext, print_ciphertext
 from shamir_secret import shamir_encrypt, shamir_decrypt
 from sslib import shamir
+from CRYSTALS_KYBER import kyber
 import sys
 
 
@@ -22,7 +23,7 @@ def homorphic():
 
     print("De som decrypted is:", decrypted_sum[0])
 
-def shamir(): # Note that the shamir library used is only for linux systems as the library refers to a linux path /dev/random
+def shamirencrypt(): # Note that the shamir library used is only for linux systems as the library refers to a linux path /dev/random
     choice = int(input("Encrypt or decrypt sentence? (1,2): "))
     
     if choice == 1:
@@ -43,7 +44,8 @@ def shamir(): # Note that the shamir library used is only for linux systems as t
 
 def main():
     homorphic()
-    shamir()
+    shamirencrypt()
+    kyber()
 
 if __name__ == "__main__":
     main()

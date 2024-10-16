@@ -1,3 +1,4 @@
 tenseal
 sslib
 numpy
+pqcrypto

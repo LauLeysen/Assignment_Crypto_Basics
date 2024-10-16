@@ -19,3 +19,4 @@ Encrypteer een zin. Gebruik een post-quantum crypto algoritme naar keuze (zie bv
 https://csrc.nist.gov/Projects/post-quantum-cryptography/selected-algorithms-2022)
 om deze zin te encrypteren. Leg in het verslag uit hoe je te werk bent gegaan en hoe ik
 deze zin zou kunnen decrypteren.
+
