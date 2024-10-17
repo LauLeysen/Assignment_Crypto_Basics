@@ -1,7 +1,7 @@
 from homorphic_encryption import initialize_context, encrypt_number, add_ciphertexts, decrypt_ciphertext, print_ciphertext
 from shamir_secret import shamir_encrypt, shamir_decrypt
 from sslib import shamir
-from CRYSTALS_KYBER import kyber
+from post_quantum import DILITHIUM
 import sys
 
 
@@ -44,8 +44,8 @@ def shamirencrypt(): # Note that the shamir library used is only for linux syste
 
 def main():
     homorphic()
-    shamirencrypt()
-    kyber()
+    shamir()
+    DILITHIUM()
 
 if __name__ == "__main__":
     main()
